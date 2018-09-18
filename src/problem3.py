@@ -87,6 +87,20 @@ def problem3(point, length, delta, window):
       :type delta:   int
       :type window:  rg.RoseWindow
     """
+    p = point
+    r = point.x
+    s = point.y + length
+    e = rg.Point(r, s)
+    window = rg.RoseWindow
+
+    line = rg.Line(p, e)
+    line.thickness = 3
+    line.color = 'black'
+
+    line.attach_to(window)
+
+    window.render()
+
     # --------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     # TODO (continued):  IMPORTANT: Use this ITERATIVE ENHANCEMENT PLAN:
