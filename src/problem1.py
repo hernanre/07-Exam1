@@ -179,6 +179,7 @@ def problem1b(point, win, width, height, color):
 
     ellipse.attach_to(win)
     win.render()
+    
     # --------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.  SEE THE PICTURES in the PDF!
     #          Tests have been written for you (above).
